@@ -8,6 +8,7 @@ COPY prepare-node.sh .
 RUN chmod +x prepare-node.sh
 RUN ./prepare-node.sh v3.0.3
 
+
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS Final
 RUN apt-get update && apt-get install -y screen \
     curl \
