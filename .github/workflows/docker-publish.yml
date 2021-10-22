@@ -56,7 +56,7 @@ jobs:
             type=ref,enable=true,priority=600,prefix=,suffix=,event=tag
             type=ref,enable=true,priority=600,prefix=pr-,suffix=,event=pr
             type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
+            # type=semver,pattern={{major}}.{{minor}}
           
 
       # Build and push Docker image with Buildx (don't push on PR)
