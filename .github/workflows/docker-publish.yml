@@ -6,8 +6,6 @@ name: Docker
 # documentation.
 
 on:
-  schedule:
-    - cron: '28 2 * * *'
   push:
     branches: [ master ]
     # Publish semver tags as releases.
@@ -51,6 +49,8 @@ jobs:
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          flavor: |
+            latest=auto
           tags: |
             type=ref,enable=true,priority=600,prefix=,suffix=,event=branch
             type=ref,enable=true,priority=600,prefix=,suffix=,event=tag
