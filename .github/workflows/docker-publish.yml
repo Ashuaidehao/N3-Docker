@@ -52,7 +52,6 @@ jobs:
           flavor: |
             latest=true
           # tags: |
-          #  type=ref
           #  type=semver,pattern={{version}}
           #  type=ref,enable=true,priority=600,prefix=,suffix=,event=branch
           #  type=ref,enable=true,priority=600,prefix=,suffix=,event=tag
