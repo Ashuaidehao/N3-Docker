@@ -1,6 +1,6 @@
 #!/bin/bash
 
-nodeversion="v3.0.3"
+nodeversion="v3.1.0"
 pluginsversion=$nodeversion
 
 echo "Downloading neo node $nodeversion"
